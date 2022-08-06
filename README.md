@@ -27,3 +27,6 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 nvim +PlugInstall
 ```
+
+## License
+This repository falls under [MIT License]().
