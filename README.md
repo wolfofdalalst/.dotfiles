@@ -7,10 +7,10 @@ Neofetch bash output; Fedora Linux 36 Inspiron 3501
 Clone this repository into ~/.dotfiles
 ```
 # Use SSH (if set up) ...
-git clone git@github.com:GuptaAyush19/dotfiles.git ~/.dotfiles
+git clone git@github.com:wolfofdalalst/dotfiles.git ~/.dotfiles
 
 # or use HTTPS and switch remotes later.
-git clone https://github.com/GuptaAyush19/dotfiles.git ~/.dotfiles
+git clone https://github.com/wolfofdalalst/dotfiles.git ~/.dotfiles
 ```
 For installing and setting up neovim and zsh (ohmyzsh) run this command
 ```
