@@ -45,15 +45,16 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 " install vimplug
-if empty(glob('~/.vim/autoload/plug.vim'))
-    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+    silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 call plug#begin('~/.vim/plugged')
-
-    Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+    
+    " Uncomment this to install pylint
+    " Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
     Plug 'https://github.com/rakr/vim-one'
     Plug 'vim-airline/vim-airline'
     Plug 'preservim/nerdtree'
