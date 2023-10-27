@@ -31,5 +31,8 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 nvim +PlugInstall
 ```
 
+## Contribution
+Contributions and improvements are welcome. If you have any suggestions or want to contribute to these dotfiles, please feel free to open an issue or submit a pull request
+
 ## License
-This repository falls under [MIT License]().
+This repository falls under [MIT License](). Feel free to use, share, and modify these dotfiles as you see fit.
