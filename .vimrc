@@ -75,6 +75,9 @@ set background=dark " for the dark version
 " security options
 set nomodeline
 
+" auto-save files
+autocmd CursorHold * update
+
 " pymode, stops error window from popping up
 let g:pymode_lint_cwindow = 0
 
@@ -88,3 +91,12 @@ augroup myCmds
 au!
 autocmd VimEnter * silent !echo -ne "\e[2 q"
 augroup END
+
+" automatic closing of brackets
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
